@@ -46,51 +46,6 @@
         </div>
     </nav>
     <!-- END nav -->
-
-    <!--<section class="ftco-section contact-section" >
-
-
-        <div class="cube-container">
-
-            <div class="cube initial-position">
-
-                <img class="cube-face-image image-1" src="https://images.unsplash.com/photo-1445810694374-0a94739e4a03?w=300&h=300&fit=crop">
-
-                <img class="cube-face-image image-2" src="https://images.unsplash.com/photo-1515260268569-9271009adfdb?w=300&h=300&fit=crop">
-
-                <img class="cube-face-image image-3" src="https://images.unsplash.com/photo-1506045412240-22980140a405?w=300&h=300&fit=crop">
-
-                <img class="cube-face-image image-4" src="https://images.unsplash.com/photo-1514041181368-bca62cceffcd?w=300&h=300&fit=crop">
-
-                <img class="cube-face-image image-5" src="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?w=300&h=300&fit=crop">
-
-                <img class="cube-face-image image-6" src="https://images.unsplash.com/photo-1486334803289-1623f249dd1e?w=300&h=300&fit=crop">
-
-            </div>
-
-        </div>
-
-
-        <div class="image-buttons">
-
-            <input type="image" class="show-image-1" src="https://images.unsplash.com/photo-1445810694374-0a94739e4a03?w=100&h=100&fit=crop"></input>
-
-            <input type="image" class="show-image-2" src="https://images.unsplash.com/photo-1515260268569-9271009adfdb?w=100&h=100&fit=crop"></input>
-
-            <input type="image" class="show-image-3" src="https://images.unsplash.com/photo-1506045412240-22980140a405?w=100&h=100&fit=crop"></input>
-
-            <input type="image" class="show-image-4" src="https://images.unsplash.com/photo-1514041181368-bca62cceffcd?w=100&h=100&fit=crop"></input>
-
-            <input type="image" class="show-image-5" src="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?w=100&h=100&fit=crop"></input>
-
-            <input type="image" class="show-image-6" src="https://images.unsplash.com/photo-1486334803289-1623f249dd1e?w=100&h=100&fit=crop"></input>
-
-        </div>
-
-
-
-
-    </section>-->
     
     <section class="gallery-block cards-gallery" style="background">
 
@@ -225,43 +180,6 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    
-
-    <!--cubeGalleryScript-->
-    <!--<script>
-        //DOM load event
-        window.addEventListener("DOMContentLoaded", () => {
-
-            const cube = document.querySelector(".cube"),
-                  imageButtons = document.querySelector(".image-buttons");
-            let cubeImageClass = cube.classList[1];
-
-            //Add click event listener to image buttons container
-            imageButtons.addEventListener("click", e => {
-
-                //Get node type and class value of clicked element
-                const targetNode = e.target.nodeName,
-                      targetClass = e.target.className;
-
-                //Check if image input has been clicked and isn't the currently shown image
-                if (targetNode === "INPUT" && targetClass !== cubeImageClass) {
-
-                    console.log(`Show Image: ${targetClass.charAt(11)}`);
-
-                    //Replace previous cube image class with new class
-                    cube.classList.replace(cubeImageClass, targetClass);
-
-                    //Update cube image class variable with new class
-                    cubeImageClass = targetClass;
-
-                }
-
-            });
-
-        });
-
-    </script>-->
-    <!--cubeGalleryScript-->
 
     <!--regularGalleryScript-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
