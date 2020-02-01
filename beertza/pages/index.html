@@ -189,24 +189,24 @@
                     <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps?q=32.4006777,34.9350003&output=embed&key=AIzaSyBfkTGT7xEgGOuPFwFBm79btEE1UqsUbjM" allowfullscreen></iframe>                </div>
                 <div class="col-md-6 appointment ftco-animate">
                     <h3 class="mb-3" style="text-align:center;">דברו איתנו</h3>
-                    <form action="#" class="appointment-form">
+                    <form action="#" id="contactUsForm" class="appointment-form">
                         <div class="d-md-flex">
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="שם מלא" required>
+                                <input type="text" id="fullName" class="form-control" placeholder="שם מלא" required>
                             </div>
                         </div>
                         <div class="d-me-flex">
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="אימייל" required>
+                                <input type="text" id="Email" class="form-control" placeholder="אימייל" required>
                             </div>
                         </div>
                         <div class="d-me-flex">
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="נושא" required>
+                                <input type="text" id="subject" class="form-control" placeholder="נושא" required>
                             </div>
                         </div>
                         <div class="form-group">
-                            <textarea name="" id="" cols="30" rows="3" class="form-control" placeholder="הודעה" required></textarea>
+                            <textarea name="" id="textArea" cols="30" rows="3" class="form-control" placeholder="הודעה" required></textarea>
                         </div>
                         <div class="form-group">
                             <input type="submit" value="שלח הודעה" class="btn btn-primary py-3 px-4">
@@ -246,6 +246,45 @@
     <script src="../js/jquery.timepicker.min.js"></script>
     <script src="../js/scrollax.min.js"></script>
     <script src="../js/main.js"></script>
+    <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
+
+    <script>
+        $('#contactUsForm').submit(function (e) {
+            e.preventDefault();
+
+            var data = {
+                service_id: 'default_service',
+                template_id: 'template_kZsapjEM',
+                user_id: 'user_sgRlSCZ9Oy5DVVJa5e0a9',
+                template_params: {
+                    'username': 'beertzza',
+                    'g-recaptcha-response': '03AHJ_ASjnLA214KSNKFJAK12sfKASfehbmfd...',
+                    'from_name': $('#fullName').val(),
+                    'subject': $('#subject').val(),
+                    'message_html': $('#textArea').val(),
+                    'customerMail':$('#Email').val()
+                }
+            };
+
+
+            $.ajax('https://api.emailjs.com/api/v1.0/email/send', {
+                type: 'POST',
+                data: JSON.stringify(data),
+                contentType: 'application/json'
+            }).done(function () {
+                alert('תודה רבה על ששיתפת אותנו,נחזור אלייך בהקדם');
+                $('#fullName').val("");
+                $('#subject').val("");
+                $('#textArea').val("");
+                $('#Email').val("");
+            }).fail(function (error) {
+                console.log(JSON.stringify(error))
+                alert('משהו השתבש נסה שנית');
+            });
+
+
+        })
+    </script>
 
 
 </body>
