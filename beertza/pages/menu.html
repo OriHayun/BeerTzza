@@ -1,14 +1,13 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Beertzza</title>
+    <title>Beerzza</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nothing+You+Could+Do" rel="stylesheet">
-    <a href="menu.html">menu.html</a>
     <link rel="stylesheet" href="../css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="../css/animate.css">
 
@@ -30,9 +29,12 @@
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
         <div class="container">
             <a class="navbar-brand" href="index.html"><span class="flaticon-pizza-1 mr-1"></span>Beertzza<small>בירצה לבירצאים</small></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="oi oi-menu"></span>
+            </button>
             <div class="collapse navbar-collapse" id="ftco-nav">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a href="contact.html" class="nav-link">צור קשר</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">צור קשר/אירועים</a></li>
                     <li class="nav-item"><a href="gallery.html" class="nav-link">גלריית תמונות</a></li>
                     <li class="nav-item"><a href="Shipments.html" class="nav-link">משלוחים</a></li>
                     <li class="nav-item active"><a href="menu.html" class="nav-link">תפריט</a></li>
@@ -78,7 +80,7 @@
                 <div class="col-lg-8 ftco-animate">
                     <div class="row">
                         <div class="col-md-12 nav-link-wrap mb-5">
-                            <div class="nav ftco-animate nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                            <div class="nav ftco-animate nav-pills text-center" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                                 <a class="nav-link active" id="v-pills-1-tab" data-toggle="pill" href="#v-pills-1" role="tab" aria-controls="v-pills-1" aria-selected="true">פיצות</a>
 
                                 <a class="nav-link" id="v-pills-2-tab" data-toggle="pill" href="#v-pills-2" role="tab" aria-controls="v-pills-2" aria-selected="false">שתיה & קינוחים</a>
@@ -92,14 +94,14 @@
                             <div class="tab-content ftco-animate" id="v-pills-tabContent">
 
                                 <div class="tab-pane fade show active" id="v-pills-1" role="tabpanel" aria-labelledby="v-pills-1-tab">
-                                    <div class="row">
+                                    <div class="row" id="pizzaTypes">
                                         <div class="col-md-4 text-center">
                                             <div class="menu-wrap">
                                                 <img class="menu-img img mb-4" src="../images/BeerTzza-pizza.jpg" />
                                                 <div class="text">
                                                     <h3>בירצה</h3>
-                                                    <p>פיצת הבית- בצק דק וקריספי, רוטב ירקות גינה וגבינת מוצרלה וצהובה</p><br /><br />
-                                                    <p class="price"><span>S- 30</span></p><p class="price"><span>L- 55</span></p>
+                                                    <p>פיצת הבית- בצק דק וקריספי, רוטב ירקות גינה, גבינת מוצרלה וצהובה</p><br /><br />
+                                                    <p class="price"><span>S- 32</span></p><p class="price"><span>L- 58</span></p>
                                                 </div>
                                             </div>
                                         </div>
@@ -121,11 +123,91 @@
                                                     <h3>ללא גלוטן</h3>
                                                     <p>בצק דק וקריספי מכיל קוסמת ירוקה אורגנית,מלח הימלאיה ורוד,עלי בזיליקום טריים</p>
                                                     <span>*עלול להכיל גלוטן</span>
-                                                    <p class="price"><span>S- 35</span></p><p class="price"><span>L- 60</span></p>
+                                                    <p class="price"><span>S- 38</span></p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="row" id="Extras">
+                                        <div class="flex-column col-3 text-center">
+                                            <div class="menu-wrap">
+                                                <div class="text">
+                                                    <h3>פחדן</h3>
+                                                    <ul>
+                                                        <li>זיתים</li>
+                                                        <li>בצל</li>
+                                                        <li>עגבניות</li>
+                                                        <li>תירס</li>
+                                                        <li>פלפל-חריף</li>
+                                                        <li>רוקט</li>
+                                                    </ul>
+                                                    <br />
+                                                    <!--<p>זיתים,&nbsp;בצל,&nbsp;עגבניות,&nbsp;<br />תירס,&nbsp;פלפל חריף,&nbsp;רוקט</p>-->
+                                                    <p class="price"><span>S- 3</span></p><p class="price"><span>L- 5</span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex-column col-3 text-center">
+                                            <div class="menu-wrap">
+                                                <div class="text">
+                                                    <h3>מנוסה</h3>
+                                                    <div class="row">
+                                                        <ul>
+                                                            <li>בטטה</li>
+                                                            <li>גמבה</li>
+                                                            <li>טונה</li>
+                                                            <li>אננס</li>
+                                                            <li>פטריות</li>
+                                                        </ul>
+                                                    </div>
+                                                    <br /><br />
+                                                    <!--<p>בטטה,&nbsp;גמבה,&nbsp;טונה,&nbsp;<br />אננס,&nbsp;פטריות</p>-->
+                                                    <p class="price"><span>S- 4</span></p><p class="price"><span>L- 8</span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex-column col-3 text-center">
+                                            <div class="menu-wrap">
+                                                <div class="text">
+                                                    <h3>אמיץ</h3>
+                                                    <ul>
+                                                        <li>שום-אפוי</li>
+                                                        <li>ברוקולי</li>
+                                                        <li>ארטישוק</li>
+                                                        <li>בולגרית</li>
+                                                        <li>פרמז'ן</li>
+                                                        <li>עיזים</li>
+                                                        <li>כחולה</li>
+                                                    </ul>
+                                                    <!--<p>שום אפוי,&nbsp;ברוקולי,&nbsp;<br />ארטישוק,&nbsp;בולגרית,&nbsp;<br />פרמז'ן,&nbsp;עיזים,&nbsp;כחולה</p>-->
+                                                    <p class="price"><span>S- 5</span></p><p class="price"><span>L- 10</span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex-column col-3 text-center">
+                                            <div class="menu-wrap">
+                                                <div class="text">
+                                                    <h3>גאון</h3>
+                                                    <ul>
+                                                        <li>פפרוני</li>
+                                                        <li>בייקון</li>
+                                                        <li>מרגז</li>
+                                                        <li>אנשובי</li>
+                                                    </ul>
+                                                    <br /><br /><br />
+                                                    <!--<p>פפרוני,&nbsp;בייקון,&nbsp;מרגז,&nbsp;אנשובי</p><br />-->
+                                                    <p class="price"><span>S- 6</span></p><p class="price"><span>L- 12</span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row" id="ExtrasBtn">
+                                        <button type="button" class="btn btn-primary btn-lg btn-block" >צפה בתוספות</button>
+                                    </div>
+                                    <div class="row" id="pizzaTypesBtn">
+                                        <button type="button" class="btn btn-primary btn-lg btn-block" >צפה בפיצות</button>
+                                    </div>
+
                                 </div>
 
                                 <div class="tab-pane fade" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-2-tab">
@@ -160,126 +242,6 @@
                                             </div>
                                         </div>
                                     </div>
-                                    
-                                    
-                                        <!--<div class="row">
-                                        <div class="card-group text-white">
-                                            <div class="card bg-dark text-right col-sm-4">
-                                                <img class="card-img-top drink-img" src="../images/soft-drink.png">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">שתיה קלה</h5>
-                                                    <ul>
-                                                        <li>קולה</li>
-                                                        <li>זירו</li>
-                                                        <li>ספרייט</li>
-                                                        <li>פיוז טי</li>
-                                                        <li>בירה שחורה</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="card bg-dark text-right col-sm-4">
-                                                <img class="card-img-top drink-img" src="../images/hot-drink.png" alt="Card image cap">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">שתיה חמה</h5>
-                                                    <ul>
-                                                        <li>אספרסו</li>
-                                                        <li>קפוצ'ינו</li>
-                                                        <li>חליטות תה</li>
-                                                        <li>שוקו משוקולד</li>
-                                                        <li>אמריקנו</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="card bg-dark text-right col-sm-4">
-                                                <img class="card-img-top drink-img" src="../images/dessert.png" alt="Card image cap">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">קינוחים</h5>
-                                                </div>
-                                            </div>
-                                        </div>
-
-
-
-
-                                    </div>-->
-                                    
-                                    
-                                    <!--<div class="row">
-                                        <div class="col-md-1.5 text-center">
-                                            <div class="menu-wrap">
-                                                <img class="menu-img" src="../images/coca-cola-regular.png" style="height:100px;width:60px;"  />
-                                                <span>קולה</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-1.5 text-center">
-                                            <div class="menu-wrap">
-                                                <img class="menu-img" src="../images/coca-cola-zero.png" style="height:100px;width:60px;" />
-                                                <span>זירו</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-1.5 text-center">
-                                            <div class="menu-wrap">
-                                                <img class="menu-img" src="../images/sprite.png" style="height:100px;width:80px;" />
-                                                <span>ספרייט</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-1.5 text-center">
-                                            <div class="menu-wrap">
-                                                <img class="menu-img" src="../images/grapes.png" style="height:100px;width:80px;" />
-                                                <span>ענבים</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-1.5 text-center">
-                                            <div class="menu-wrap">
-                                                <img class="menu-img" src="../images/fuze_tea.png" style="height:100px;width:80px;" />
-                                                <span>פיוז טי</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-1.5 text-center">
-                                            <div class="menu-wrap">
-                                                <img class="menu-img" src="../images/malt.png" style="height:100px;width:90px;" />
-                                                <span>בירה שחורה</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-1.5 text-center">
-                                            <div class="menu-wrap">
-                                                <img class="menu-img" src="../images/limonana.png" style="height:100px;width:90px;" />
-                                                <span>לימונענע</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-1.5 text-center">
-                                            <div class="menu-wrap">
-                                                <img class="menu-img" src="../images/tea.png" style="height:70px;width:90px;margin-top:30px;" />
-                                                <span>חליטת תה</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-1.5 text-center" style="margin-bottom:15px;">
-                                            <div class="menu-wrap">
-                                                <img class="menu-img" src="../images/shoko.png" style="height:100px;width:80Px;" />
-                                                <span>שוקו</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-1.5 text-center">
-                                            <div class="menu-wrap">
-                                                <img class="menu-img" src="../images/espresso.png" style="height:90px;width:90px;margin-top:11px;" />
-                                                <span>אספרסו</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-1.5 text-center">
-                                            <div class="menu-wrap">
-                                                <img class="menu-img" src="../images/cappuccino.png" style="height:90px;width:90px;margin-top:11px;" />
-                                                <span>קפוצ'ינו</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-1.5 text-center">
-                                            <div class="menu-wrap">
-                                                <img class="menu-img" src="../images/americano.png" style="height:90px;width:90px;margin-top:11px;" />
-                                                <span>אמריקנו</span>
-                                            </div>
-                                        </div>
-                                    </div>-->
                                 </div>
 
                                 <div class="tab-pane fade" id="v-pills-4" role="tabpanel" aria-labelledby="v-pills-4-tab">
@@ -353,10 +315,25 @@
     <script src="../js/scrollax.min.js"></script>
     <script src="../js/main.js"></script>
     <script>
+        $('#Extras').hide();
+        $('#pizzaTypesBtn').hide();
+
         $(document).on("click", ".box", function () {
             $('html, body').animate({
                 scrollTop: $("#BeerTzzaMenu").offset().top
             }, 1500);
+        })
+        $(document).on("click", "#ExtrasBtn", function () {
+            $('#pizzaTypes').hide();
+            $('#Extras').show();
+            $('#ExtrasBtn').hide();
+            $('#pizzaTypesBtn').show();
+        })
+        $(document).on("click", "#pizzaTypesBtn", function () {
+            $('#pizzaTypes').show();
+            $('#Extras').hide();
+            $('#ExtrasBtn').show();
+            $('#pizzaTypesBtn').hide();
         })
     </script>
 
