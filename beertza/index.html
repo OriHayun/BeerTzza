@@ -31,11 +31,16 @@
     <link rel="stylesheet" href="./css/icomoon.css">
     <link rel="stylesheet" href="./css/style.css">
 
+
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-        <div class="container">
-            <a class="navbar-brand" href="index.html"><span class="flaticon-pizza-1 mr-1"></span>Beerzza<small>בירצה לבירצאים</small></a>
+        <!--<div class="container">-->
+            <div class="social d-md-flex pl-md-5 p-4 align-items-center">
+                <a href="https://www.facebook.com/beertza/" target="_blank"><span class="icon-facebook">&nbsp;</span></a>
+                <a href="https://www.instagram.com/beertza/" target="_blank"><span class="icon-instagram"></span></a>
+            </div>
+            <a class="navbar-brand" href="index.html"><img src="../images/logo.jpeg" style="height:40px;width:40px;margin-left:40px;margin-bottom:10px;" /><small style="color:indianred">בירצה לבירצאים</small></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="oi oi-menu"></span>
             </button>
@@ -43,12 +48,11 @@
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item"><a href="contact.html" class="nav-link">צור קשר/אירועים</a></li>
                     <li class="nav-item"><a href="gallery.html" class="nav-link">גלריית תמונות</a></li>
-                    <li class="nav-item"><a href="Shipments.html" class="nav-link">משלוחים</a></li>
-                    <li class="nav-item"><a href="menu.html" class="nav-link">תפריט</a></li>
+                    <li class="nav-item"><a href="Shipments.html" class="nav-link">בירצה עד הבית</a></li>
                     <li class="nav-item active"><a href="index.html" class="nav-link">בית</a></li>
                 </ul>
             </div>
-        </div>
+        <!--</div>-->
     </nav>
     <!-- END nav -->
     <section class="home-slider owl-carousel img">
@@ -57,8 +61,8 @@
             <div class="container">
                 <div class="row slider-text align-items-center" data-scrollax-parent="true">
                     <div class="col-md-6 col-sm-12 ftco-animate">
-                        <span class="subheading">Delicious</span>
-                        <p><a href="tel:+972532847588" class="btn btn-primary p-3 px-xl-4 py-xl-3">הזמן עכשיו</a> <a href="menu.html" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">צפה בתפריט</a></p>
+                        <!--<span class="subheading">Delicious</span>-->
+                        <p><a href="tel:+972532847588" class="btn btn-primary p-3 px-xl-4 py-xl-3"><span class="icon-phone" style="color:black;">&nbsp;התקשר</span></a> <a href="#BeerTzzaMenu" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">צפה בתפריט</a></p>
                     </div>
                 </div>
             </div>
@@ -68,8 +72,8 @@
             <div class="container">
                 <div class="row slider-text align-items-center" data-scrollax-parent="true">
                     <div class="col-md-6 col-sm-12 order-md-last ftco-animate">
-                        <span class="subheading">Welcome</span>
-                        <p><a href="tel:+972532847588" class="btn btn-primary p-3 px-xl-4 py-xl-3">הזמן עכשיו</a> <a href="menu.html" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">צפה בתפריט</a></p>
+                        <!--<span class="subheading">Welcome</span>-->
+                        <p><a href="tel:+972532847588" class="btn btn-primary p-3 px-xl-4 py-xl-3"><span class="icon-phone" style="color:black;">&nbsp;התקשר</span></a> <a href="#BeerTzzaMenu" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">צפה בתפריט</a></p>
                     </div>
                     <div class="col-md-6 ftco-animate">
                         <img src="" class="img-fluid" alt="">
@@ -82,8 +86,8 @@
             <div class="container">
                 <div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
                     <div class="col-md-7 col-sm-12 text-center ftco-animate">
-                        <span class="subheading">Crunchy</span>
-                        <p><a href="tel:+972532847588" class="btn btn-primary p-3 px-xl-4 py-xl-3">הזמן עכשיו</a> <a href="menu.html" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">צפה בתפריט</a></p>
+                        <!--<span class="subheading">Crunchy</span>-->
+                        <p><a href="tel:+972532847588" class="btn btn-primary p-3 px-xl-4 py-xl-3"><span class="icon-phone" style="color:black;">&nbsp;התקשר</span></a><a href="#BeerTzzaMenu" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">צפה בתפריט</a></p>
                     </div>
                 </div>
             </div>
@@ -143,7 +147,218 @@
         </div>
     </section>
 
-    <section class="ftco-counter ftco-bg-dark img" id="section-counter"  data-stellar-background-ratio="0.5">
+    <section class="ftco-menu" dir="rtl">
+        <div id="BeerTzzaMenu" class="container-fluid">
+            <div class="row justify-content-center mb-5 pb-3">
+                <div class="col-md-7 heading-section ftco-animate text-center">
+                    <h2 class="mb-4">תפריט</h2>
+                    <p>רוטב עגבניות חם וטרי הנעשה במקום משלל ירקות ועשבי תיבול יחד עם תערובת מוצרלה וצהובה על בצק דק ופריך יוצרות את הפיצה המושלמת. כל שנותר הוא לבחור את התוספות - בתיאבון</p>
+                </div>
+            </div>
+            <div class="row d-md-flex">
+                <div class="col-lg-4 ftco-animate img f-menu-img mb-5 mb-md-0 fadeInUp ftco-animated" style="background-image: url(./images/Beertzza-Resturant.jpg);">
+
+                </div>
+                <div class="col-lg-8 ftco-animate">
+                    <div class="row">
+                        <div class="col-md-12 nav-link-wrap mb-5">
+                            <div class="nav ftco-animate nav-pills text-center" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                <a class="nav-link active" id="v-pills-1-tab" data-toggle="pill" href="#v-pills-1" role="tab" aria-controls="v-pills-1" aria-selected="true">פיצות</a>
+
+                                <a class="nav-link" id="v-pills-2-tab" data-toggle="pill" href="#v-pills-2" role="tab" aria-controls="v-pills-2" aria-selected="false">שתיה & קינוחים</a>
+
+
+                                <a class="nav-link" id="v-pills-4-tab" data-toggle="pill" href="#v-pills-4" role="tab" aria-controls="v-pills-4" aria-selected="false">בירה & אלכוהול</a>
+                            </div>
+                        </div>
+                        <div class="col-md-12 d-flex align-items-center">
+
+                            <div class="tab-content ftco-animate" id="v-pills-tabContent">
+
+                                <div class="tab-pane fade show active" id="v-pills-1" role="tabpanel" aria-labelledby="v-pills-1-tab">
+                                    <div class="row" id="pizzaTypes">
+                                        <div class="col-md-4 text-center">
+                                            <div class="menu-wrap">
+                                                <img class="menu-img img mb-4" src="./images/BeerTzza-pizza.jpg" />
+                                                <div class="text">
+                                                    <h3>בירצה</h3>
+                                                    <p>פיצת הבית- בצק דק וקריספי, רוטב ירקות גינה, גבינת מוצרלה וצהובה</p>
+                                                    <p class="price"><span>אישית- &#8362;32</span></p><p class="price"><span>משפחתית- &#8362;58</span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 text-center">
+                                            <div class="menu-wrap">
+                                                <img class="menu-img img mb-4" src="./images/BeerTzza-vegan.jpg" />
+                                                <div class="text">
+                                                    <h3>טבעוני</h3>
+                                                    <p>הגבינשיו מבית עדיקא.<br />מכיל: קשיו טבעי, קמח טפיוקה ותבלינים</p>
+                                                    <p class="price"><span>אישית- &#8362;38</span></p><p class="price"><span>משפחתית- &#8362;68</span></p>
+                                                    <span>*ללא חומרים משמרים</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 text-center">
+                                            <div class="menu-wrap">
+                                                <img class="menu-img img mb-4" src="./images/BeerTzza-glutenFree.jpg" />
+                                                <div class="text">
+                                                    <h3>ללא גלוטן</h3>
+                                                    <p>מכיל: קוסמת ירוקה אורגנית,מלח הימלאיה ורוד,עלי בזיליקום טריים</p>
+                                                    <p class="price"><span>אישית- &#8362;38</span></p>
+                                                    <span>*עלול להכיל גלוטן</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row" id="Extras">
+                                        <div class="flex-column col-3 text-center">
+                                            <div class="menu-wrap">
+                                                <div class="text">
+                                                    <h3>פחדן</h3>
+                                                    <ul>
+                                                        <li>זיתים</li>
+                                                        <li>בצל</li>
+                                                        <li>עגבניות</li>
+                                                        <li>תירס</li>
+                                                        <li>חלפיניו</li>
+                                                        <li>רוקט</li>
+                                                    </ul>
+                                                    <br />
+                                                    <p class="price"><span style="font-size:8px;">אישית- &#8362;3</span></p><p class="price"><span style="font-size:8px;">משפחתית- &#8362;5</span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex-column col-3 text-center">
+                                            <div class="menu-wrap">
+                                                <div class="text">
+                                                    <h3>מנוסה</h3>
+                                                    <ul>
+                                                        <li>בטטה</li>
+                                                        <li>גמבה</li>
+                                                        <li>טונה</li>
+                                                        <li>אננס</li>
+                                                        <li>פטריות</li>
+                                                    </ul>
+                                                    <br /><br />
+                                                    <p class="price"><span style="font-size:8px;">אישית- &#8362;4</span></p><p class="price"><span style="font-size:8px;">משפחתית- &#8362;8</span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex-column col-3 text-center">
+                                            <div class="menu-wrap">
+                                                <div class="text">
+                                                    <h3>אמיץ</h3>
+                                                    <ul>
+                                                        <li>שום-אפוי</li>
+                                                        <li>ברוקולי</li>
+                                                        <li>ארטישוק</li>
+                                                        <li>בולגרית</li>
+                                                        <li>פרמז'ן</li>
+                                                        <li>עיזים</li>
+                                                        <li>כחולה</li>
+                                                    </ul>
+                                                    <p class="price"><span style="font-size:8px;">אישית- &#8362;5</span></p><p class="price"><span style="font-size:8px;">משפחתית- &#8362;10</span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex-column col-3 text-center">
+                                            <div class="menu-wrap">
+                                                <div class="text">
+                                                    <h3>גאון</h3>
+                                                    <ul>
+                                                        <li>פפרוני</li>
+                                                        <li>בייקון</li>
+                                                        <li>מרגז</li>
+                                                        <li>אנשובי</li>
+                                                    </ul>
+                                                    <br /><br /><br />
+                                                    <p class="price"><span style="font-size:8px;">אישית- &#8362;6</span></p><p class="price"><span style="font-size:8px;">משפחתית- &#8362;12</span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row" id="ExtrasBtn">
+                                        <button type="button" class="btn btn-primary btn-lg btn-block">צפה בתוספות</button>
+                                    </div>
+                                    <div class="row" id="pizzaTypesBtn">
+                                        <button type="button" class="btn btn-primary btn-lg btn-block">צפה בפיצות</button>
+                                    </div>
+
+                                </div>
+
+                                <div class="tab-pane fade" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-2-tab">
+
+                                    <div class="row">
+                                        <div class="col-md-4 text-center">
+                                            <div>
+                                                <img class="img mb-4 drink-img" src="./images/soft-drink.png" />
+                                                <div class="text">
+                                                    <h3>שתיה קלה</h3>
+                                                    <p>קולה,&nbsp;זירו,&nbsp;ספרייט,&nbsp;פיוז תה,&nbsp;סודה,&nbsp;ענבים,&nbsp;לימונענע</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 text-center">
+                                            <div>
+                                                <img class="img mb-4 drink-img" src="./images/hot-drink.png" />
+                                                <div class="text">
+                                                    <h3>שתיה חמה</h3>
+                                                    <p>אספרסו,&nbsp;קפוצ'ינו,&nbsp;אמריקנו,&nbsp;חליטת תה,&nbsp;שוקו שוקולד,&nbsp;</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 text-center">
+                                            <div>
+                                                <img class="img mb-4 drink-img" src="./images/dessert.png" />
+                                                <div class="text">
+                                                    <h3>קינוחים</h3>
+                                                    <p>עוגת שוקולד חמה,&nbsp;<br />פאי שוקולד חם<img src="./images/vegan.png" style="height:20px;width:20px;" />,&nbsp;בר שוקולד<img src="../images/vegan.png" style="height:20px;width:20px;" />&nbsp;</p>
+                                                    <span>*קינוחים מתחלפים </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade" id="v-pills-4" role="tabpanel" aria-labelledby="v-pills-4-tab">
+                                    <div class="row">
+                                        <div class="col-md-4 text-center">
+                                            <div class="menu-wrap">
+                                                <img class="menu-img img mb-4 drink-img" src="./images/beer.png" />
+                                                <div class="text">
+                                                    <h3>בירות</h3>
+                                                    <p>בירצה-בירת הבית,&nbsp;ברזל בלגית(חבית),&nbsp;בקס,&nbsp;גולדסטאר,&nbsp;קורונה,&nbsp;<br />קסטיל,&nbsp;באדוויזר,&nbsp;ברזל ipa</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 text-center">
+                                            <div class="menu-wrap">
+                                                <img class="menu-img img mb-4" src="./images/alcohol.png" />
+                                                <div class="text">
+                                                    <h3>אלכוהול</h3>
+                                                    <p>ערק,&nbsp;ווסקי,&nbsp;טאקילה</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 text-center">
+                                            <div class="menu-wrap">
+                                                <img class="menu-img img mb-4" src="./images/wine.png" />
+                                                <div class="text">
+                                                    <h3>יין</h3>
+                                                    <p>יין אדום</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--<section class="ftco-counter ftco-bg-dark img" id="section-counter" data-stellar-background-ratio="0.5">
         <div class="overlay"></div>
         <div class="container">
             <div class="row justify-content-center">
@@ -159,44 +374,45 @@
                             </div>
                         </div>
                         <div id="gogleRate" class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
-                                <div class="block-18 text-center">
-                                    <div class="text">
-                                        <div class="icon"><span class="flaticon-medal"></span></div>
-                                        <strong class="number" data-number="4.7">0.0</strong>
-                                        <a href="https://www.google.com/search?q=%D7%91%D7%99%D7%A8%D7%A6%D7%94&oq=%D7%91%D7%99%D7%A8%D7%A6%D7%94&aqs=chrome..69i57j0l4j69i61j69i60l2.665j0j7&sourceid=chrome&ie=UTF-8" target="_blank"><span>דרוג בגוגל</span></a>
-                                    </div>
+                            <div class="block-18 text-center">
+                                <div class="text">
+                                    <div class="icon"><span class="flaticon-medal"></span></div>
+                                    <strong class="number" data-number="4.7">0.0</strong>
+                                    <a href="https://www.google.com/search?q=%D7%91%D7%99%D7%A8%D7%A6%D7%94&oq=%D7%91%D7%99%D7%A8%D7%A6%D7%94&aqs=chrome..69i57j0l4j69i61j69i60l2.665j0j7&sourceid=chrome&ie=UTF-8" target="_blank"><span>דרוג בגוגל</span></a>
                                 </div>
                             </div>
-                            <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
-                                <div class="block-18 text-center">
-                                    <div class="text">
-                                        <div class="icon"><span class="flaticon-laugh"></span></div>
-                                        <strong class="number" data-number="21">0</strong>
-                                        <span>ישובי משלוחים</span>
-                                    </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
+                            <div class="block-18 text-center">
+                                <div class="text">
+                                    <div class="icon"><span class="flaticon-laugh"></span></div>
+                                    <strong class="number" data-number="21">0</strong>
+                                    <span>ישובי משלוחים</span>
                                 </div>
                             </div>
-                            <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
-                                <div class="block-18 text-center">
-                                    <div class="text">
-                                        <div class="icon"><span class="flaticon-chef"></span></div>
-                                        <strong class="number" data-number="17">0</strong>
-                                        <span>עובדים</span>
-                                    </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
+                            <div class="block-18 text-center">
+                                <div class="text">
+                                    <div class="icon"><span class="flaticon-chef"></span></div>
+                                    <strong class="number" data-number="17">0</strong>
+                                    <span>עובדים</span>
                                 </div>
                             </div>
-</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
-    
+    </section>-->
+    <div><p></p></div>
     <section class="ftco-appointment" dir="rtl">
         <div class="overlay"></div>
         <div class="container-wrap">
             <div class="row no-gutters d-md-flex align-items-center">
                 <div class="col-md-6 d-flex align-self-stretch">
-                    <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps?q=32.4006777,34.9350003&output=embed&key=AIzaSyBfkTGT7xEgGOuPFwFBm79btEE1UqsUbjM" allowfullscreen></iframe>                </div>
+                    <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps?q=32.4006777,34.9350003&output=embed&key=AIzaSyBfkTGT7xEgGOuPFwFBm79btEE1UqsUbjM" allowfullscreen></iframe>
+                </div>
                 <div class="col-md-6 appointment ftco-animate">
                     <h3 class="mb-3" style="text-align:center;">דברו איתנו</h3>
                     <form action="#" id="contactUsForm" class="appointment-form">
@@ -229,7 +445,7 @@
 
     <footer class="ftco-footer">
         <div class="container text-center">
-            <span style="">All rights reserved to Beerzza&copy; </span><br /><a href="http://orihayun.com/" target="_blank"><span>Created by Ori Hayun</span></a>  
+            <span style="">All rights reserved to Beerzza&copy; </span><br /><a href="http://orihayun.com/" target="_blank"><span>Created by Ori Hayun</span></a>
             <ul style="margin-right:32px;" class="ftco-footer-social float-md-none">
                 <li class="ftco-animate"><a href="https://www.facebook.com/beertza/"><span class="icon-facebook"></span></a></li>
                 <li class="ftco-animate"><a href="https://www.instagram.com/beertza/"><span class="icon-instagram"></span></a></li>
@@ -256,8 +472,29 @@
     <script src="./js/jquery.timepicker.min.js"></script>
     <script src="./js/scrollax.min.js"></script>
     <script src="./js/main.js"></script>
-    <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
+    <script>
+        $('#Extras').hide();
+        $('#pizzaTypesBtn').hide();
 
+        $(document).on("click", ".box", function () {
+            $('html, body').animate({
+                scrollTop: $("#BeerTzzaMenu").offset().top
+            }, 1500);
+        })
+        $(document).on("click", "#ExtrasBtn", function () {
+            $('#pizzaTypes').hide();
+            $('#Extras').show();
+            $('#ExtrasBtn').hide();
+            $('#pizzaTypesBtn').show();
+        })
+        $(document).on("click", "#pizzaTypesBtn", function () {
+            $('#pizzaTypes').show();
+            $('#Extras').hide();
+            $('#ExtrasBtn').show();
+            $('#pizzaTypesBtn').hide();
+        })
+    </script>
     <script>
         $('#contactUsForm').submit(function (e) {
             e.preventDefault();
@@ -272,7 +509,7 @@
                     'from_name': $('#fullName').val(),
                     'subject': $('#subject').val(),
                     'message_html': $('#textArea').val(),
-                    'customerMail':$('#Email').val()
+                    'customerMail': $('#Email').val()
                 }
             };
 

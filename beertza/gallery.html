@@ -24,7 +24,6 @@
     <link rel="stylesheet" href="./css/icomoon.css">
     <link rel="stylesheet" href="./css/style.css">
     <link href="./css/myStyle.css" rel="stylesheet" />
-    <link href="./css/cubeGallery.css" rel="stylesheet" />
     <link href="./css/regularGalley.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/879e971c11.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -33,7 +32,11 @@
 <body>
     <nav class="navbar navbar-expand-lg  ftco_navbar  ftco-navbar-light" id="ftco-navbar">
         <div class="container">
-            <a class="navbar-brand" href="index.html"><span class="flaticon-pizza-1 mr-1"></span>Beerzza<small>בירצה לבירצאים</small></a>
+            <div class="social d-md-flex pl-md-5 p-4 align-items-center">
+                <a href="https://www.facebook.com/beertza/" target="_blank"><span class="icon-facebook ">&nbsp;</span></a>
+                <a href="https://www.instagram.com/beertza/" target="_blank"><span class="icon-instagram"></span></a>
+            </div>
+            <a class="navbar-brand" href="index.html"><img src="../images/logo.jpeg" style="height:40px;width:40px;margin-left:40px;margin-bottom:10px;" /><small style="color:indianred">בירצה לבירצאים</small></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="oi oi-menu"></span>
             </button>
@@ -41,18 +44,17 @@
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item"><a href="contact.html" class="nav-link">צור קשר/אירועים</a></li>
                     <li class="nav-item active"><a href="gallery.html" class="nav-link">גלריית תמונות</a></li>
-                    <li class="nav-item"><a href="Shipments.html" class="nav-link">משלוחים</a></li>
-                    <li class="nav-item"><a href="menu.html" class="nav-link">תפריט</a></li>
+                    <li class="nav-item"><a href="Shipments.html" class="nav-link">בירצה עד הבית</a></li>
                     <li class="nav-item"><a href="index.html" class="nav-link">בית</a></li>
                 </ul>
             </div>
         </div>
     </nav>
     <!-- END nav -->
-    
+
     <section class="gallery-block cards-gallery" style="background">
 
-        <div class="container">
+        <!--<div class="container">
             <div class="row">
                 <div class="col-md-6 col-lg-4">
                     <div class="card border-0 transform-on-hover">
@@ -145,13 +147,49 @@
                     </div>
                 </div>
             </div>
+        </div>-->
+        <div class="cube-container">
+
+            <div class="cube initial-position">
+
+                <img class="cube-face-image image-1" style="height:30rem;width:30rem;" src="../images/gallery/gallery6.jpeg">
+
+                <img class="cube-face-image image-2" style="height:30rem;width:30rem;" src="../images/gallery/gallery2.jpg">
+
+                <img class="cube-face-image image-3" style="height:30rem;width:30rem;" src="../images/gallery/gallery3.jpg">
+
+                <img class="cube-face-image image-4" style="height:30rem;width:30rem;" src="../images/gallery/gallery4.jpg">
+
+                <img class="cube-face-image image-5" style="height:30rem;width:30rem;" src="../images/gallery/gallery5.jpeg">
+
+                <img class="cube-face-image image-6" style="height:30rem;width:30rem;" src="../images/gallery/gallery1.jpg">
+
+            </div>
+
+        </div>
+
+
+        <div class="image-buttons">
+
+            <input type="image" class="show-image-1" style="height:104px;width:104px;" src="../images/gallery/gallery6.jpeg">
+
+            <input type="image" class="show-image-2" style="height:104px;width:104px;" src="../images/gallery/gallery2.jpg">
+
+            <input type="image" class="show-image-3" style="height:104px;width:104px;" src="../images/gallery/gallery3.jpg">
+
+            <input type="image" class="show-image-4" style="height:104px;width:104px;" src="../images/gallery/gallery4.jpg">
+
+            <input type="image" class="show-image-5" style="height:104px;width:104px;" src="../images/gallery/gallery5.jpeg">
+
+            <input type="image" class="show-image-6" style="height:104px;width:104px;" src="../images/gallery/gallery1.jpg">
+
         </div>
 
     </section>
 
     <footer class="ftco-footer">
         <div class="container text-center">
-            <span style="">All rights reserved to Beerzza&copy; </span><br /><a href="http://orihayun.com/" target="_blank"><span>Created by Ori Hayun</span></a>  
+            <span style="">All rights reserved to Beerzza&copy; </span><br /><a href="http://orihayun.com/" target="_blank"><span>Created by Ori Hayun</span></a>
             <ul style="margin-right:32px;" class="ftco-footer-social float-md-none">
                 <li class="ftco-animate"><a href="https://www.facebook.com/beertza/"><span class="icon-facebook"></span></a></li>
                 <li class="ftco-animate"><a href="https://www.instagram.com/beertza/"><span class="icon-instagram"></span></a></li>
@@ -185,8 +223,43 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
     <!--regularGalleryScript-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>-->
     <!--regularGalleryScript-->
+    <!--CubeGallery-->
+    <script>
+        //DOM load event
+        window.addEventListener("DOMContentLoaded", () => {
+
+            const cube = document.querySelector(".cube"),
+            imageButtons = document.querySelector(".image-buttons");
+            let cubeImageClass = cube.classList[1];
+
+            //Add click event listener to image buttons container
+            imageButtons.addEventListener("click", e => {
+
+                //Get node type and class value of clicked element
+                const targetNode = e.target.nodeName,
+                targetClass = e.target.className;
+
+                //Check if image input has been clicked and isn't the currently shown image
+                if (targetNode === "INPUT" && targetClass !== cubeImageClass) {
+
+                    console.log(`Show Image: ${targetClass.charAt(11)}`);
+
+                    //Replace previous cube image class with new class
+                    cube.classList.replace(cubeImageClass, targetClass);
+
+                    //Update cube image class variable with new class
+                    cubeImageClass = targetClass;
+
+                }
+
+            });
+
+        });
+    </script>
+    <!--CubeGallery-->
+
 
 </body>
 </html>
