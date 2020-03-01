@@ -1,4 +1,26 @@
-﻿.arrow{
+﻿.sliderImg{
+    background-image:url(../images/BeerTzza-slider-1.jpg);
+}
+
+@media (max-width:300px){
+    .sliderImg{
+        background-image:url(../images/BeerTzza-slider-1-mobile.png);
+    }
+}
+
+@media (min-width:500px){
+    .DesktopBtn{
+        font-size:30px;
+    }
+}
+
+
+.DesktopNavItem{
+        font-size:25px;
+    }
+
+
+.arrow{
     position: absolute;
     top: 50%;
     left: 50%;
