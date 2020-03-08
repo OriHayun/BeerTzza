@@ -2,10 +2,16 @@
     background-image:url(../images/BeerTzza-slider-1.jpg);
 }
 
-@media (max-width:300px){
+@media (max-width:415px){
     .sliderImg{
         background-image:url(../images/BeerTzza-slider-1-mobile.png);
     }
+    .fixAlignInfo{
+    margin-right:-20px;
+    }
+    .PriceIngredents{
+    font-size:11px !important;
+}
 }
 
 @media (min-width:500px){
@@ -18,6 +24,11 @@
 .DesktopNavItem{
         font-size:25px;
     }
+
+.DesktopPhoneBtn:hover{
+    color:white !important;
+}
+
 
 
 .arrow{
